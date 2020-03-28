@@ -1,0 +1,7 @@
+version: '3'
+services:
+  sh:
+    build: github.com/gopasspw/gopass#master
+    entrypoint: sh
+    volumes:
+    - .:/data

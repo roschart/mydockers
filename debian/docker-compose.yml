@@ -1,0 +1,8 @@
+version: '3'
+services:
+  bash:
+    build: .
+    volumes:
+    - .:/data
+    - ~:/home
+    # user: 1000:1000

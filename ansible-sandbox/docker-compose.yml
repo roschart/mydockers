@@ -1,0 +1,14 @@
+version: "3.7"
+services:
+  client:
+    build: client
+    container_name: client
+    hostname: client
+    ports:
+      - "8022:22"
+  ansible:
+    build: ansible
+    container_name: ansible
+    hostname: ansible
+    stdin_open: true
+    tty: true
